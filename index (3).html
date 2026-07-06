@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amir — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">amir<span>@</span>hanul<span>:</span>~$</div>
+    <div class="navlinks">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#languages">languages</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">frontend developer / student</div>
+      <div class="term">
+        <div class="term-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="term-title">amir@hanul: ~</span>
+        </div>
+        <div class="term-body" id="typedTerm"></div>
+      </div>
+      <div class="hero-cta">
+        <a href="#skills" class="btn btn-primary">view the skill graph →</a>
+        <a href="#contact" class="btn btn-ghost">get in touch</a>
+      </div>
+    </div>
+
+    <div class="graph-frame">
+      <svg id="netgraph" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+        <g id="edges"></g>
+        <g id="packets"></g>
+        <g id="nodes"></g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+
+      <div class="stat-card">
+        <div class="k">location</div>
+        <div class="v">Tehran, Iran</div>
+      </div>
+      <div class="stat-card">
+        <div class="k">age</div>
+        <div class="v">16</div>
+      </div>
+      <div class="stat-card">
+        <div class="k">grade</div>
+        <div class="v">11th — Math track</div>
+      </div>
+      <div class="stat-card">
+        <div class="k">os</div>
+        <div class="v">Linux user</div>
+      </div>
+    </div>
+    <div class="about-copy">
+      <div class="eyebrow">about</div>
+      <h2>Hey, I'm Amir.</h2>
+      <p>I'm a <strong>16-year-old frontend developer</strong> from Tehran, currently in <strong>11th grade on the math track</strong>. Most of what I build starts with <strong>HTML, CSS and JavaScript</strong>, and I'm slowly getting comfortable with <strong>React</strong> for anything that needs more structure.</p>
+      <p>Outside the browser, I run <strong>Linux</strong> day to day and I'm working through <strong>Network+</strong> material to understand what happens under the pages I build. I also write <strong>Python</strong> when a problem is easier to reason about outside a browser.</p>
+      <p>Math class and code end up feeding each other more than people expect — both are just systems of rules I get to take apart.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">skills</div>
+    <h2>What I work with</h2>
+    <p class="lede">Frontend first, with the systems side — Linux and networking — growing underneath it.</p>
+
+    <div class="skill-groups">
+      <div class="skill-card">
+        <h3>FRONTEND</h3>
+        <div class="skill-row">
+          <div class="label"><span>HTML / CSS</span><span>90%</span></div>
+          <div class="bar"><span data-w="90"></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label"><span>JavaScript</span><span>75%</span></div>
+          <div class="bar"><span data-w="75"></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label"><span>React</span><span>40%</span></div>
+          <div class="bar"><span data-w="40"></span></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>SYSTEMS</h3>
+        <div class="skill-row">
+          <div class="label"><span>Linux</span><span>70%</span></div>
+          <div class="bar"><span data-w="70"></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label"><span>Network+</span><span>50%</span></div>
+          <div class="bar"><span data-w="50"></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label"><span>Python</span><span>55%</span></div>
+          <div class="bar"><span data-w="55"></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label"><span>Docker</span><span>30%</span></div>
+          <div class="bar"><span data-w="30"></span></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>CURRENTLY LEARNING</h3>
+        <div class="skill-row">
+          <div class="label"><span>Docker</span><span>in progress</span></div>
+          <div class="bar"><span data-w="30"></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label"><span>React (deeper)</span><span>in progress</span></div>
+          <div class="bar"><span data-w="40"></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label"><span>Network+ cert</span><span>in progress</span></div>
+          <div class="bar"><span data-w="50"></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="label"><span>Algorithms (math track)</span><span>in progress</span></div>
+          <div class="bar"><span data-w="60"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="languages">
+  <div class="wrap">
+    <div class="eyebrow">languages</div>
+    <h2>locale --list</h2>
+    <p class="lede">Persian first, English for almost everything technical, German still early.</p>
+
+    <div class="lang-table">
+      <div class="lang-row">
+        <span class="idx">01</span>
+        <span class="name">Persian <small>native</small></span>
+        <span class="level">fluent</span>
+        <span class="lang-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+      </div>
+      <div class="lang-row">
+        <span class="idx">02</span>
+        <span class="name">English <small>second language</small></span>
+        <span class="level">fluent</span>
+        <span class="lang-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+      </div>
+      <div class="lang-row">
+        <span class="idx">03</span>
+        <span class="name">German <small>third language</small></span>
+        <span class="level">learning</span>
+        <span class="lang-dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="eyebrow">education</div>
+    <h2>Currently</h2>
+    <div class="edu-card">
+      <div class="edu-icon">∑</div>
+      <div>
+        <h3>11th Grade — Mathematics Track</h3>
+        <div class="meta">Tehran, Iran</div>
+        <p>Studying on the math and physics track, which is where a lot of my interest in logical systems — and by extension, programming — comes from.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">contact</div>
+    <h2>Let's talk</h2>
+    <p class="lede">Open to chatting about frontend projects, networking, or math. Reach out below.</p>
+
+    <div class="term contact-term">
+      <div class="term-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="term-title">contact.sh</span>
+      </div>
+      <div class="term-body">
+        <div class="term-line"><span class="prompt">$</span><span class="out">whoami --handle</span></div>
+        <div class="term-line"><span class="out hi">hanul_amm</span></div>
+      </div>
+    </div>
+
+    <div class="contact-links">
+      <a class="clink" href="https://www.linkedin.com/in/amirtaleqani" target="_blank" rel="noopener">LinkedIn — amirtaleqani</a>
+      <a class="clink" href="https://t.me/hanul_amm" target="_blank" rel="noopener">Telegram — hanul_amm</a>
+    </div>
+    <p class="note">// swap the Telegram link for your real one if it's different.</p>
+  </div>
+</section>
+
+<footer>
+  built by <span class="accent">Amir</span> — Tehran, Iran
+</footer>
+
+<script>
+// ---------- typed terminal intro ----------
+const lines = [
+  { p: "amir@tehran", c: "whoami" },
+  { out: "Amir — frontend developer, 11th grade math student" },
+  { p: "amir@tehran", c: "cat stack.txt" },
+  { out: "HTML · CSS · JavaScript · React · Python · Linux · Network+" },
+  { p: "amir@tehran", c: "locale --list" },
+  { out: "fa_IR (native) · en_US (fluent) · de_DE (learning)" },
+];
+
+const termEl = document.getElementById('typedTerm');
+let li = 0;
+
+function typeLine(entry, done){
+  const row = document.createElement('div');
+  row.className = 'term-line';
+  if(entry.p){
+    row.innerHTML = `<span class="prompt">${entry.p} $</span><span class="out"></span>`;
+    termEl.appendChild(row);
+    const outSpan = row.querySelector('.out');
+    let i = 0;
+    const text = entry.c;
+    const iv = setInterval(()=>{
+      outSpan.textContent += text[i];
+      i++;
+      if(i >= text.length){ clearInterval(iv); setTimeout(done, 220); }
+    }, 28);
+  } else {
+    row.innerHTML = `<span class="prompt"></span><span class="out hi">${entry.out}</span>`;
+    termEl.appendChild(row);
+    setTimeout(done, 380);
+  }
+}
+
+function runTyping(){
+  if(li >= lines.length){
+    const cur = document.createElement('span');
+    cur.className = 'cursor';
+    termEl.appendChild(cur);
+    return;
+  }
+  typeLine(lines[li], ()=>{ li++; runTyping(); });
+}
+runTyping();
+
+// ---------- network graph (signature element) ----------
+const svgNS = "http://www.w3.org/2000/svg";
+const edgesG = document.getElementById('edges');
+const nodesG = document.getElementById('nodes');
+const packetsG = document.getElementById('packets');
+
+const center = { x: 210, y: 210, r: 30, label: "AMIR" };
+const skills = [
+  { label: "HTML/CSS", x: 210, y: 60 },
+  { label: "JavaScript", x: 350, y: 130 },
+  { label: "React", x: 372, y: 280 },
+  { label: "Python", x: 260, y: 370 },
+  { label: "Linux", x: 130, y: 372 },
+  { label: "Network+", x: 48, y: 262 },
+  { label: "Docker", x: 90, y: 190 },
+  { label: "English", x: 90, y: 60 },
+];
+
+skills.forEach((s, i) => {
+  const line = document.createElementNS(svgNS, 'line');
+  line.setAttribute('x1', center.x);
+  line.setAttribute('y1', center.y);
+  line.setAttribute('x2', s.x);
+  line.setAttribute('y2', s.y);
+  line.setAttribute('class', 'edge');
+  edgesG.appendChild(line);
+
+  const dot = document.createElementNS(svgNS, 'circle');
+  dot.setAttribute('r', 3.2);
+  dot.setAttribute('class', 'packet');
+  dot.style.opacity = '0';
+  packetsG.appendChild(dot);
+
+  function animatePacket(){
+    const dur = 1800 + Math.random()*1400;
+    const delay = i * 260;
+    let start = null;
+    dot.style.opacity = '1';
+    function step(ts){
+      if(!start) start = ts;
+      let t = ((ts - start) / dur) % 1;
+      const x = center.x + (s.x - center.x) * t;
+      const y = center.y + (s.y - center.y) * t;
+      dot.setAttribute('cx', x);
+      dot.setAttribute('cy', y);
+      requestAnimationFrame(step);
+    }
+    setTimeout(()=> requestAnimationFrame(step), delay);
+  }
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce) animatePacket();
+
+  const circle = document.createElementNS(svgNS, 'circle');
+  circle.setAttribute('cx', s.x);
+  circle.setAttribute('cy', s.y);
+  circle.setAttribute('r', 20);
+  circle.setAttribute('fill', '#111a2e');
+  circle.setAttribute('stroke', '#1E293B');
+  nodesG.appendChild(circle);
+
+  const text = document.createElementNS(svgNS, 'text');
+  text.setAttribute('x', s.x);
+  text.setAttribute('y', s.y + 34);
+  text.setAttribute('text-anchor', 'middle');
+  text.setAttribute('class', 'node-label');
+  text.textContent = s.label;
+  nodesG.appendChild(text);
+});
+
+const centerCircle = document.createElementNS(svgNS, 'circle');
+centerCircle.setAttribute('cx', center.x);
+centerCircle.setAttribute('cy', center.y);
+centerCircle.setAttribute('r', center.r);
+centerCircle.setAttribute('fill', '#0B1120');
+centerCircle.setAttribute('stroke', '#F2A65A');
+centerCircle.setAttribute('stroke-width', '2');
+nodesG.appendChild(centerCircle);
+
+const centerText = document.createElementNS(svgNS, 'text');
+centerText.setAttribute('x', center.x);
+centerText.setAttribute('y', center.y + 5);
+centerText.setAttribute('text-anchor', 'middle');
+centerText.setAttribute('class', 'node-label self');
+centerText.textContent = center.label;
+nodesG.appendChild(centerText);
+
+// ---------- skill bars fill on scroll ----------
+const bars = document.querySelectorAll('.bar > span');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.width = e.target.dataset.w + '%';
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.4 });
+bars.forEach(b => io.observe(b));
+</script>
+
+</body>
+</html>
